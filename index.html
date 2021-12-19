@@ -1,0 +1,280 @@
+<html>
+<head>
+          <style>      
+
+        INPUT {
+            height: 40px; 
+            width: 100px;
+            color: red;
+            background-color: rgba(226, 226, 226, 1.0);                                                 
+        }
+        form {
+            background-color: rgba(226, 226, 226, 0.685);
+            padding: 50px;
+            border-radius: 20px;
+            width: fit-content;
+            margin: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            border:2px solid grey;
+            border-radius:5px;                                 /* USED FOR CURVE IN THE BUTTON*/
+            background-color:rgb(102, 102, 102);              /*BG COLOR OF BUTTON */      
+            color: white;                                     /*FONT COLOR OF TEXT INSIDE THE BUTTON */
+            font-size:15px;                                     /*FONT SIZE OF TEXT INSIDE THE BUTTON*/
+        }
+        button:hover{
+            background-color: rgb(62, 153, 62);
+        }
+        body{
+            background-image: url('https://mooc.tce.edu/pluginfile.php/2/course/section/202/MOOC-Courses-Homepage-BG.jpeg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: max-content;
+        }  
+
+
+    </style>
+<script language="JavaScript">
+	var math,ppp,dsa,oops,alp,dsal,oopsl,dt;
+	var mathgp,pppgp,dsagp,oopsgp,alpgp,dsalgp,oopslgp,dtgp;
+    var c1=3,c2=3,c3=3,c4=3,c5=3,c6=1,c7=1,c8=2; //Credits for each subject
+    var gpa;
+
+    function Calculate(){
+    	math=parseInt(form1.txtNum1.value);
+    	ppp=parseInt(form1.txtNum2.value);
+    	dsa=parseInt(form1.txtNum3.value);
+    	oops=parseInt(form1.txtNum4.value);
+    	alp=parseInt(form1.txtNum5.value);
+    	dsal=parseInt(form1.txtNum6.value);
+    	oopsl=parseInt(form1.txtNum7.value);
+    	dt=parseInt(form1.txtNum8.value);
+
+    if (math>=90 && math<=100) {
+
+        mathgp=10;
+    }
+    else if (math>=80 && math<90){
+
+
+        mathgp=9;
+    }
+    else if (math>=70 && math<80)
+    {
+
+        mathgp=8;}
+    else if (math>=60 && math<70)
+    {
+
+        mathgp=7;}
+    else if(math>=50 && math<60)
+    {
+        mathgp=6;}
+    else
+    {
+
+        mathgp=0;}
+        if (ppp>=90 && ppp<=100) {
+
+        pppgp=10;
+    }
+    else if (ppp>=80 &&ppp<90){
+
+
+        pppgp=9;
+    }
+    else if (ppp>=70 && ppp<80)
+    {
+
+        pppgp=8;}
+    else if (ppp>=60 && ppp<70)
+    {
+
+        pppgp=7;}
+    else if(ppp>=50 && ppp<60)
+    {
+        pppgp=6;}
+    else
+    {
+
+        pppgp=0;}
+        if (dsa>=90 && dsa<=100) {
+
+        dsagp=10;
+    }
+    else if (dsa>=80 && dsa<90){
+
+
+        dsagp=9;
+    }
+    else if (dsa>=70 && dsa<80)
+    {
+
+        dsagp=8;}
+    else if (dsa>=60 && dsa<70)
+    {;
+
+        dsagp=7;}
+    else if(dsa>=50 && dsa<60)
+    {
+        dsagp=6;}
+    else
+    {
+
+        dsagp=0;}
+        if (oops>=90 && oops<=100) {
+
+        oopsgp=10;
+    }
+    else if (oops>=80 && oops<90){
+        oopsgp
+
+        oopsgp=9;
+    }
+    else if (oops>=70 && oops<80)
+    {
+
+        oopsgp=8;}
+    else if (oops>=60 && oops<70)
+    {;
+
+        oopsgp=7;}
+    else if(oops>=50 && oops<60)
+    {
+        oopsgp=6;}
+    else
+    {
+
+        oopsgp=0;}
+        if (alp>=90 && alp<=100) {
+
+        alpgp=10;
+    }
+    else if (alp>=80 && alp<90){
+        alpgp
+
+        alpgp=9;
+    }
+    else if (alp>=70 && alp<80)
+    {
+
+        alpgp=8;}
+    else if (alp>=60 && alp<70)
+    {;
+
+        alpgp=7;}
+    else if(alp>=50 && alp<60)
+    {
+        alpgp=6;}
+    else
+    {
+
+        alpgp=0;}
+        if (dsal>=90 && dsal<=100) {
+
+        dsalgp=10;
+    }
+    else if (dsal>=80 && dsal<90){
+
+
+        dsalgp=9;
+    }
+    else if (dsal>=70 && dsal<80)
+    {
+
+        dsalgp=8;}
+    else if (dsal>=60 && dsal<70)
+    {
+
+        dsalgp=7;}
+    else if(dsal>=50 && dsal<60)
+    {
+        dsalgp=6;}
+    else
+    {
+
+        dsalgp=0;}
+        if (oopsl>=90 && oopsl<=100) {
+
+        oopslgp=10;
+    }
+    else if (oopsl>=80 && oopsl<90){
+
+
+        oopslgp=9;
+    }
+    else if (oopsl>=70 && oopsl<80)
+    {
+
+        oopslgp=8;}
+    else if (oopsl>=60 && oopsl<70)
+    {
+
+        oopslgp=7;}
+    else if(oopsl>=50 && oopsl<60){
+
+          oopslgp=6;}
+    else
+    {
+
+        oopslgp=0;}
+        if (dt>=90 && dt<=100) {
+
+        dtgp=10;
+    }
+    else if (dt>=80 && dt<90){
+
+
+        dtgp=9;
+    }
+    else if (dt>=70 && dt<80)
+    {
+
+        dtgp=8;}
+    else if (dt>=60 && dt<70)
+    {
+
+        dtgp=7;}
+    else if(dt>=50 && dt<60)
+    {
+        dtgp=6;}
+    else
+    {
+
+       dtgp=0;}
+
+
+    gpa=(mathgp*c1+pppgp*c2+dsagp*c3+oopsgp*c4+alpgp*c5+dsalgp*c6+oopslgp*c7+dtgp*c8)/(c1+c2+c3+c4+c5+c6+c7+c8);
+    alert("CGPA:"+gpa);
+
+
+    }
+
+
+
+
+
+</script>
+</head>
+<body style="text-align: center;margin-top: 50px;font-size: 20px;">
+    <h2>Semester 3 CGPA Calculator</h2>
+
+<form name="form1">
+	<b>Enter Marks Math:</b><INPUT type="textbox" name="txtNum1"></br>
+	<br><b>Enter Marks Principles of Programming Paradigms:</b><INPUT type="textbox " name="txtNum2"></br>
+	<br><b>Enter Marks Data Structures And Algorithms:</b><INPUT type="textbox" name="txtNum3"></br>
+	<br><b>Enter Marks Object Orineted Programming:</b><INPUT type="textbox" name="txtNum4"></br>
+	<br><b>Enter Marks Assembly Language Programming:</b><INPUT type="textbox" name="txtNum5"></br>
+	<br><b>Enter Marks Data Structures And Algorithms Lab:</b><INPUT type="textbox" name="txtNum6"></br>
+	<br><b>Enter Marks Object Orineted Programming Lab:</b><INPUT type="textbox" name="txtNum7"></br>
+	<br><b>Enter Marks Design Thinking:</b><INPUT type="textbox" name="txtNum8"></br>
+
+	<br><INPUT type="button" value="Calculate" onClick='Calculate()'>
+
+
+    </form>
+</body>
+</html>
